@@ -1,0 +1,242 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="../assets/css/contact.css">
+  <link rel="stylesheet" href="../assets/css/styles.min.css">
+  <link rel="stylesheet" href="properties.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="dist/output.css">
+
+
+  <title>properties</title>
+</head>
+
+<body>
+  <div class="container mx-auto">
+    <section class="mx-auto">
+      <section class="property" id="property">
+        <div class="container flex flex-col justify-center items-center text-center">
+          <p class="text-gray-500">Properties</p>
+          <h2 class="text-4xl font-bold">Featured Listings</h2>
+        </div>
+      </section>
+    </section>
+  
+    <div class="container mx-auto">
+      <section class="mx-auto">
+        <ul class="property-list has-scrollbar"></ul>
+        <div class="container flex flex-col items-center">
+          <div class="slider-container">
+            <div class="slider-images">
+              <img src="images/property-1.jpg" alt="Image 1" class="w-full">
+              <img src="images/property-2.jpg" alt="Image 2" class="w-full">
+              <img src="images/property-3.jpg" alt="Image 3" class="w-full">
+            </div>
+            <div class="slider-thumbnails flex justify-center">
+              <img src="images/property-1.jpg" alt="Thumbnail 1" class="w-1/4 cursor-pointer" onclick="showImage(0)">
+              <img src="images/property-2.jpg" alt="Thumbnail 2" class="w-1/4 cursor-pointer" onclick="showImage(1)">
+              <img src="images/property-3.jpg" alt="Thumbnail 3" class="w-1/4 cursor-pointer" onclick="showImage(2)">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+    <br>
+    <br>
+
+    
+    <main class="max-w-6xl mx-auto pt-10 pb-36 px-8">
+        
+      <div class="max-w-md mx-auto mb-14 text-center">
+        <h1 class="text-4xl font-semibold mb-6 lg:text-5xl"><span class="text-indigo-600">Flexible</span> Plans</h1>
+        <p class="text-xl text-gray-500 font-medium">Choose a plan that works best for you and your team.</p>
+      </div>
+      
+      <div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
+        
+        <div class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
+          <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+            <img src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"  alt="" class="rounded-3xl w-20 h-20" />
+            <div class="ml-5">
+              <span class="block text-2xl font-semibold">Basic</span>
+              <span><span class="font-medium text-gray-500 text-xl align-top">$&thinsp;</span><span class="text-3xl font-bold">10 </span></span><span class="text-gray-500 font-medium">/ user</span>
+            </div>
+          </div>
+          <ul class="mb-7 font-medium text-gray-500">
+            <li class="flex text-lg mb-2">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3">Get started with <span class="text-black">messaging</span></span>
+            </li>
+            <li class="flex text-lg mb-2">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3">Flexible <span class="text-black">team meetings</span></span>
+            </li>
+            <li class="flex text-lg">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3"><span class="text-black">5 TB</span> cloud storage</span>
+            </li>
+          </ul>
+          <a href="#/" class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl">
+            Choose Plan
+            <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+          </a>
+        </div>
+        
+        <div class="w-full flex-1 p-8 order-1 shadow-xl rounded-3xl bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:order-2 lg:mt-0">
+          <div class="mb-8 pb-8 flex items-center border-b border-gray-600">
+            <img src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg"  alt="" class="rounded-3xl w-20 h-20" />
+            <div class="ml-5">
+              <span class="block text-3xl font-semibold text-white">Startup</span>
+              <span><span class="font-medium text-xl align-top">$&thinsp;</span><span class="text-3xl font-bold text-white">24 </span></span><span class="font-medium">/ user</span>
+            </div>
+          </div>
+          <ul class="mb-10 font-medium text-xl">
+            <li class="flex mb-6">
+              <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+              <span class="ml-3">All features in <span class="text-white">Basic</span></span>
+            </li>
+            <li class="flex mb-6">
+              <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+              <span class="ml-3">Flexible <span class="text-white">call scheduling</span></span>
+            </li>
+            <li class="flex">
+              <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+              <span class="ml-3"><span class="text-white">15 TB</span> cloud storage</span>
+            </li>
+          </ul>
+          <a href="#/" class="flex justify-center items-center bg-indigo-600 rounded-xl py-6 px-4 text-center text-white text-2xl">
+            Choose Plan
+            <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+          </a>
+        </div>
+        
+        <div class="w-full flex-1 mt-8 p-8 order-3 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none">
+          <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+            <img src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg"  alt="" class="rounded-3xl w-20 h-20" />
+            <div class="ml-5">
+              <span class="block text-2xl font-semibold">Enterprise</span>
+              <span><span class="font-medium text-gray-500 text-xl align-top">$&thinsp;</span><span class="text-3xl font-bold">35 </span></span><span class="text-gray-500 font-medium">/ user</span>
+            </div>
+          </div>
+          <ul class="mb-7 font-medium text-gray-500">
+            <li class="flex text-lg mb-2">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3">All features in <span class="text-black">Startup</span></span>
+            </li>
+            <li class="flex text-lg mb-2">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3">Growth <span class="text-black">oriented</span></span>
+            </li>
+            <li class="flex text-lg">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3"><span class="text-black">Unlimited</span> cloud storage</span>
+            </li>
+          </ul>
+          <a href="#/" class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl">
+            Choose Plan
+            <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+          </a>
+        </div>
+        
+      </div>
+      
+    </main>  
+
+
+      <h1 class="text-4xl font-bold text-center">About the home</h1>
+      <p class="text-lg text-gray-600 text-center">Welcome to your dream home! This stunning property boasts
+        breathtaking views of the mountains, and is located in one of the most sought-after neighborhoods in the
+        area.
+        With four spacious bedrooms, three and a half bathrooms, and an open-concept living space, this house is
+        perfect for families or those who love to entertain.
+
+        The heart of the home is the gourmet kitchen, which features granite countertops, stainless steel
+        appliances,
+        and plenty of cabinet space. The kitchen flows seamlessly into the dining and living areas, which are
+        flooded
+        with natural light and offer stunning views of the surrounding mountains.
+
+        The master suite is a true oasis, with a spacious bedroom, a luxurious ensuite bathroom, and a private
+        balcony
+        with panoramic mountain views. The remaining bedrooms are equally spacious, and offer plenty of closet
+        space
+        and natural light.
+
+        Outside, the large patio is perfect for hosting summer barbecues, and the beautifully landscaped yard
+        offers
+        plenty of space for kids and pets to play. And with a three-car garage, there's plenty of space for all
+        your
+        vehicles and storage needs.
+
+        This house is located in a prime location, with easy access to local shopping, dining, and entertainment
+        options. Plus, with top-rated schools in the area, it's the perfect place to raise a family.
+
+        Don't miss out on this incredible opportunity to own your dream home. Contact us today to schedule a
+        tour and
+        see for yourself why this property is a must-see!.</p>
+
+
+
+      <br>
+
+      <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send/?phone=212633332947&text&type=phone_number&app_absent=0"
+          target="_blank"><img src="../assets/images/whatsapp.png" class="whatsapp-icon" alt="whatsapp"
+            height="50px" /></a>
+      </div>
+
+      <br>
+
+
+
+      <!--Contact  form-->
+      <section data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900" data-aos-once="true">
+        <div class="contact__content" id="contact">
+          <h3 class="contact__title contact__title-form">Please Contact Us</h3>
+
+          <form onsubmit="sendMail(); reset(); return false;" action="" class="contact__form">
+            <div class="contact__form-div">
+              <label for="" class="contact__form-tag">Name</label>
+              <input type="text" placeholder="Enter name" class="contact__form-input" id="name">
+            </div>
+
+            <div class="contact__form-div">
+              <label for="" class="contact__form-tag">Mail</label>
+              <input type="text" placeholder="Enter email" class="contact__form-input" id="email">
+            </div>
+
+            <div class="contact__form-div contact__form-area">
+              <label for="" class="contact__form-tag">Message</label>
+              <textarea name="" id="messages" cols="30" rows="10" placeholder="Write your Message"
+                class="contact__form-input "></textarea>
+            </div>
+
+          </form>
+
+
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Click me
+          </button>
+          
+
+        </div>
+
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="properties.js"></script>
+        <script src="../assets/js/script.min.js"></script>
+</body>
+
+</html>
