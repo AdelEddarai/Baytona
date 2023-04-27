@@ -1,0 +1,38 @@
+.ml11 {
+    font-weight: 700;
+    font-size: 3.5em;
+    color: linear-gradient(#e66465, #9198e5); 
+  }
+  
+  .ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    color: linear-gradient(#e66465, #9198e5); 
+  }
+  
+  .ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #110e0e;
+    transform-origin: 0 50%;
+    
+  }
+  
+  .ml11 .line1 { 
+    top: 0; 
+    left: 0;
+  }
+  
+  .ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+    color: #e66465; 
+    
+    
+  }
