@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="assets/css/contact.css">
   <link rel="stylesheet" href="assets/css/styles.min.css">
   <link rel="stylesheet" href="assets/css/moving.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
   <!--google font link-->
@@ -202,15 +204,47 @@
               A new proptech agency that provides technology-driven solutions for the real estate market needs
             </p>
 
-            <a href="#">
-              <button class="btn">Make An Enquiry</button>
-            </a>
+            <button id="show-button"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-2 py-3 rounded mt-4">
+                Make an Enquiry
+             </button>
 
           </div>
 
           <figure class="hero-banner">
             <img src="assets/images/RE1.png" alt="Modern house model" class="w-100">
           </figure>
+          
+          
+          
+          <!-- Notification -->
+
+            <div id="notification"
+              class="fixed top-4 left-1/2 transform -translate-x-1/2 items-center justify-center px-6 py-10 bg-blue-500 text-white uppercase tracking-wide z-50 hidden rounded-md shadow-lg w-fit opacity-0 transition-opacity duration-500">
+              <span class="mr-2">
+                <i class="fas fa-check-circle"></i>
+              </span>
+              <span class="flex justify-center items-center">It is under developing we will open soon.</span>
+            </div>
+
+            <script>
+              const notification = document.getElementById('notification');
+              const showButton = document.getElementById('show-button');
+
+              showButton.addEventListener('click', () => {
+                notification.classList.remove('hidden');
+                notification.classList.add('opacity-100');
+                setTimeout(() => {
+                  notification.classList.remove('opacity-100');
+                  notification.classList.add('opacity-0');
+                  setTimeout(() => {
+                    notification.classList.add('hidden');
+                  }, 500);
+                }, 3000);
+              });
+            </script>
+
+            <!-- end of notification -->
 
 
           
