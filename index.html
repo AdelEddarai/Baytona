@@ -20,7 +20,7 @@
   <!-- custom css link-->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/contact.css">
-  <link rel="stylesheet" href="assets/css/styles.min.css">
+
   <link rel="stylesheet" href="assets/css/moving.css">
   
   <script src="https://cdn.tailwindcss.com"></script>
@@ -176,8 +176,7 @@
         - #HERO
       -->
 
-      <section class="hero" id="home" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900"
-        data-aos-once="true">
+      <section class="hero" id="home">
         <div class="container">
 
           <div class="hero-content">
@@ -185,7 +184,7 @@
             <p class="hero-subtitle">
               <ion-icon name="home"></ion-icon>
 
-              <span>Real Estate Agency</span>
+              <span class="title1">Real Estate Agency</span>
             </p>
 
             <h2 class="h1 hero-title">Find Your Dream House By</h2>
@@ -1439,7 +1438,28 @@
   
 
 
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    })
+    ScrollReveal().reveal('.hero-title', { delay: 500, origin: 'left'});
+    ScrollReveal().reveal('.hero-banner', { delay: 500, origin:'reight'});
+    ScrollReveal().reveal('.features-card', { delay: 500, origin: 'bottom'});
+    ScrollReveal().reveal('.about', { delay: 500, origin: 'left'});
+    ScrollReveal().reveal('.service', { delay: 500, origin: 'right'});
 
+
+    ScrollReveal().reveal('.title1', { delay: 500, origin: 'left'});
+    ScrollReveal().reveal('.title2', { delay: 500, origin:'reight'});
+    ScrollReveal().reveal('.title3', { delay: 500, origin: 'left'});
+  
+    
+
+   
+  </script>
 
 
   <!-- 
