@@ -37,7 +37,7 @@
 
 </head>
 
-<body>
+<body class="bg-slate-900 text-white">
 
 
   <!-- 
@@ -184,10 +184,10 @@
             <p class="hero-subtitle">
               <ion-icon name="home"></ion-icon>
 
-              <span class="title1">Real Estate Agency</span>
+              <h1 class="title1 text-white">Real Estate Agency</h1>
             </p>
 
-            <h2 class="h1 hero-title">Find Your Dream House By</h2>
+            <h2 class="h1 hero-title  text-white">Find Your Dream House By</h2>
 
             <h1 class="ml11">
               <span class="text-wrapper">
@@ -350,7 +350,7 @@
 
             <p class="section-subtitle">About Us</p>
 
-            <h2 class="h2 section-title">The Leading Real Estate Rental Marketplace.</h2>
+            <h2 class="h2 section-title text-white">The Leading Real Estate Rental Marketplace.</h2>
 
             <p class="about-text">
               Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage,
@@ -399,7 +399,10 @@
               llamco laboris. Lorem ipsum dolor sit amet"
             </p>
 
-            <a href="#service" class="btn">Our Services</a>
+            <button id="show-button"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-2 py-3 rounded mt-4">
+                Make an Enquiry
+             </button>
 
           </div>
 
@@ -418,9 +421,9 @@
         data-aos-once="true">
         <div class="container">
 
-          <p class="section-subtitle">Our Services</p>
+          <p class="section-subtitle text-white">Our Services</p>
 
-          <h2 class="h2 section-title">Our Main Focus</h2>
+          <h2 class="h2 section-title text-white">Our Main Focus</h2>
 
           <ul class="service-list">
 
@@ -518,7 +521,7 @@
 
           <p class="section-subtitle">Properties</p>
 
-          <h2 class="h2 section-title">Featured Listings</h2>
+          <h2 class="h2 section-title text-white" >Featured Listings</h2>
 
           <ul class="property-list has-scrollbar">
 
@@ -1192,7 +1195,7 @@
 
           <p class="section-subtitle">News & Blogs</p>
 
-          <h2 class="h2 section-title">Leatest News Feeds</h2>
+          <h2 class="h2 section-title text-white">Leatest News Feeds</h2>
 
           <ul class="blog-list has-scrollbar">
 
@@ -1418,8 +1421,15 @@
       </form>
 
 
-      <button class="contact__button">
+      <!-- <button class="contact__button">
         <a type="submit" onclick="sendMail()">Send</a>
+      </button> -->
+
+      <button id="show-button"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-2 py-3 rounded mt-4">
+                <a type="submit" onclick="sendMail()">
+                Make an Enquiry
+              </a>
       </button>
     </div>
       <!-- <div class="mapouter"><div class="gmap_canvas">
@@ -1639,3 +1649,4 @@
 </body>
 
 </html>
+
