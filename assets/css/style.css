@@ -149,7 +149,7 @@ button, a { transition: var(--transition); }
 .h1,
 .h2,
 .h3 {
-  color: var(--dark-jungle-green);
+  color: #fff;
   font-family: var(--ff-poppins);
   line-height: 1.3;
 }
